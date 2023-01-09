@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+   <h2>Finding the Largest of Three Numbers</h2><br>
+
+    <script>
+    //Find the largest of three numbers
+    //Use the prompt to get the inputs of three numbers
+    
+    const num1 = parseFloat(prompt("Enter first number: "));
+    const num2 = parseFloat(prompt("Enter second number: "));
+    const num3 = parseFloat(prompt("Enter third number: "));
+    let largest;
+
+    if(num1 >= num2 && num1 >= num3) {
+        largest = num1;
+    }
+    else if (num2 >= num1 && num2 >= num3) {
+        largest = num2;
+    }
+    else {
+        largest = num3;
+    }
+
+    console.log("The largest number is " + largest);
+    </script>
+</body>
+</html>

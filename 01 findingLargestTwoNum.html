@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+   <h2>Finding the Largest of Two Numbers</h2><br>
+
+    <script>
+    //Find the largest of two numbers
+    //Use the prompt to get the inputs of two numbers
+    
+    const num1 = parseFloat(prompt("Enter first number: "));
+    const num2 = parseFloat(prompt("Enter second number: "));
+    let largest;
+
+    if(num1 >= num2) {
+        largest = num1;
+    }
+    else {
+        largest = num2;
+    }
+    console.log("The largest number is " + largest);
+    </script>
+</body>
+</html>

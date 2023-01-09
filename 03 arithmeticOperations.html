@@ -7,22 +7,27 @@
       <title>Document</title>
 </head>
 <body>
-   <h2>Finding the Largest Number</h2><br>
+   <h2>Finding the Largest of Three Numbers</h2><br>
 
     <script>
-    //Find the largest of two numbers
-    //Use the prompt to get the inputs of two numbers
+    //Perform arithmetic operations on two numbers
+    //Use the prompt to get the inputs of three numbers
+    //Display results for the following operations: Addition, Substraction, Multiplcation, Division, Modulo
     
     const num1 = parseFloat(prompt("Enter first number: "));
     const num2 = parseFloat(prompt("Enter second number: "));
     let largest;
 
-    if(num1 >= num2) {
+    if(num1 >= num2 && num1 >= num3) {
         largest = num1;
     }
-    else if (num2 >= num1) {
+    else if (num2 >= num1 && num2 >= num3) {
         largest = num2;
     }
+    else {
+        largest = num3;
+    }
+
     console.log("The largest number is " + largest);
     </script>
 </body>
